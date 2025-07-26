@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { categories } from "../../assets/assets";
 import "./ExploreMenu.css";
 
-const ExploreMenu = () => {
+const ExploreMenu = ({category, setCategory}) => {
   const menuRef = useRef(null);
 
   const scrollLeft = () => {
@@ -39,11 +39,13 @@ const ExploreMenu = () => {
       >
         {categories.map((i, index) => {
           return (
-            <div key={index} className="text-center explore-menu-list-item">
+            <div key={index} className="text-center explore-menu-list-item" onClick={()=>{
+               setCategory(prev => prev === i.category ? 'All' : i.category)
+            }}>
               <img
                 src={i.icon}
                 alt=""
-                className="rounded-circle"
+                className={i.category === category ? 'rounded-circle active': 'rounded-circle'}
                 height={128}
                 width={128}
               />

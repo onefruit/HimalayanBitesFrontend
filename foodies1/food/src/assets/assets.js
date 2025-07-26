@@ -22,56 +22,15 @@ export const categories = [
         icon: burger
     },
     {
-        category: 'icecream',
+        category: 'Ice Creams',
         icon: icecream
     },
     {
-        category: 'pizza',
+        category: 'Pizza',
         icon: pizza
     },
     {
-        category: 'rolls',
-        icon: rolls
-    },
-    
-        {
-        category: 'Biryani',
-        icon: biryani
-    },
-    {
-        category: 'Burger',
-        icon: burger
-    },
-    {
-        category: 'icecream',
-        icon: icecream
-    },
-    {
-        category: 'pizza',
-        icon: pizza
-    },
-    {
-        category: 'rolls',
-        icon: rolls
-    }
-,    {
-        category: 'Biryani',
-        icon: biryani
-    },
-    {
-        category: 'Burger',
-        icon: burger
-    },
-    {
-        category: 'icecream',
-        icon: icecream
-    },
-    {
-        category: 'pizza',
-        icon: pizza
-    },
-    {
-        category: 'rolls',
+        category: 'Rolls',
         icon: rolls
     },
 
