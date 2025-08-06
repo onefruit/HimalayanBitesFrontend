@@ -4,7 +4,9 @@ import { addFood } from "../../services/FoodService";
 import { toast } from "react-toastify";
 
 const AddFood = () => {
+  
   const [image, setImage] = useState(false);
+
   const [data, setData] = useState({
     name: "",
     description: "",
@@ -17,6 +19,7 @@ const AddFood = () => {
     const value = e.target.value;
     setData((data) => ({ ...data, [name]: value }));
   };
+
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
@@ -43,6 +46,7 @@ const AddFood = () => {
           <div className="card-body">
             <h2 className="mb-4">Add Food</h2>
             <form onSubmit={onSubmitHandler}>
+
               <div className="mb-3">
                 <label htmlFor="image" className="form-label">
                   <img
@@ -67,6 +71,7 @@ const AddFood = () => {
                 </label>
                 <input
                   type="text"
+                  placeholder="Chicken Biryani"
                   className="form-control"
                   id="name"
                   required
@@ -88,6 +93,7 @@ const AddFood = () => {
                   name="description"
                   onChange={onChangeHandler}
                   value={data.description}
+                  placeholder="Write content here...."
                 ></textarea>
               </div>
 
@@ -101,6 +107,7 @@ const AddFood = () => {
                   className="form-control"
                   onChange={onChangeHandler}
                   value={data.category}
+
                 >
                   <option value="Biryani">Biryani</option>
                   <option value="Pizza">Pizza</option>
@@ -121,6 +128,7 @@ const AddFood = () => {
                   id="price"
                   onChange={onChangeHandler}
                   value={data.price}
+                  placeholder="Rs. 200"
                 />
               </div>
 
