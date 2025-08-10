@@ -5,11 +5,13 @@ import burger from './burger.jpg';
 import icecream from './icecream.jpg';
 import rolls from './rolls.jpg';
 import biryani from './biryani.jpg';
+import person from './person.png';
+
 
 
 export const assets = {
 logo, 
-cart
+cart, person
 };
 
 export const categories = [
